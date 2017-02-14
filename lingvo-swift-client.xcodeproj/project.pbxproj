@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0ABD4E1E5346F6007A3F01 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */; };
+		4E0ABD501E534700007A3F01 /* Lingvo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD4F1E534700007A3F01 /* Lingvo.swift */; };
 		659CD61B1E507F80004DC219 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CD61A1E507F80004DC219 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E0ABD4C1E534666007A3F01 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
+		4E0ABD4F1E534700007A3F01 /* Lingvo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lingvo.swift; sourceTree = "<group>"; };
 		659CD6171E507F80004DC219 /* lingvo-swift-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lingvo-swift-client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659CD61A1E507F80004DC219 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +46,7 @@
 		659CD60E1E507F80004DC219 = {
 			isa = PBXGroup;
 			children = (
+				4E0ABD4C1E534666007A3F01 /* info.plist */,
 				659CD6191E507F80004DC219 /* lingvo-swift-client */,
 				659CD6181E507F80004DC219 /* Products */,
 			);
@@ -57,6 +63,8 @@
 		659CD6191E507F80004DC219 /* lingvo-swift-client */ = {
 			isa = PBXGroup;
 			children = (
+				4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */,
+				4E0ABD4F1E534700007A3F01 /* Lingvo.swift */,
 				659CD61A1E507F80004DC219 /* main.swift */,
 			);
 			path = "lingvo-swift-client";
@@ -121,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				659CD61B1E507F80004DC219 /* main.swift in Sources */,
+				4E0ABD501E534700007A3F01 /* Lingvo.swift in Sources */,
+				4E0ABD4E1E5346F6007A3F01 /* ConsoleIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +228,8 @@
 		659CD61F1E507F80004DC219 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.micromovie.lingvo.swift-client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -226,6 +238,8 @@
 		659CD6201E507F80004DC219 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.micromovie.lingvo.swift-client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -250,6 +264,7 @@
 				659CD6201E507F80004DC219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
