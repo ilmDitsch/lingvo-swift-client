@@ -9,9 +9,11 @@
 import Foundation
 class Lingvo {
     let consoleIO = ConsoleIO()
+    let executePath : String?
     let optionType : (option : OptionType, value : String)
     
     init() {
+        self.executePath = CommandLine.arguments[0]
         if CommandLine.argc > 1 {
             //2
             let argument = CommandLine.arguments[1]
@@ -25,8 +27,10 @@ class Lingvo {
     }
     
     func execute() {
+        print(self.executePath ?? "")
         switch self.optionType.option {
         case .initialize, .push, .pull:
+            //todo: spezify the functions
             print(self.optionType.value)
         case .help:
             ConsoleIO.printUsage()
