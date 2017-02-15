@@ -1,6 +1,6 @@
 //
 //  Panagram.swift
-//  csvToStrings
+//  lingvo-swift-client
 //
 //  Created by Keiner von Ihnen on 10.02.17.
 //  Copyright © 2017 Keiner von Ihnen. All rights reserved.
@@ -23,6 +23,7 @@ class Lingvo {
             self.optionType = (OptionType.unknown, "")
             print("Invalid argument count")
             ConsoleIO.printUsage()
+            exit(EXIT_FAILURE)
         }
     }
     

@@ -1,6 +1,6 @@
 //
 //  ComandIO.swift
-//  csvToStrings
+//  lingvo-swift-client
 //
 //  Created by Keiner von Ihnen on 10.02.17.
 //  Copyright © 2017 Keiner von Ihnen. All rights reserved.

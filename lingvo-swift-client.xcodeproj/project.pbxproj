@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4E0ABD4E1E5346F6007A3F01 /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */; };
 		4E0ABD501E534700007A3F01 /* Lingvo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD4F1E534700007A3F01 /* Lingvo.swift */; };
+		4E0ABD531E545E2A007A3F01 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD521E545E2A007A3F01 /* NetworkEngine.swift */; };
+		4E0ABD551E545E56007A3F01 /* NetworkEngineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD541E545E56007A3F01 /* NetworkEngineResponse.swift */; };
+		4E0ABD5E1E54604D007A3F01 /* ObjectParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABD5D1E54604D007A3F01 /* ObjectParsable.swift */; };
+		4E41A2241E54686C00C84771 /* Dictionary+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41A2231E54686C00C84771 /* Dictionary+Parser.swift */; };
+		4E41A2261E54687400C84771 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41A2251E54687400C84771 /* String+Localization.swift */; };
 		659CD61B1E507F80004DC219 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CD61A1E507F80004DC219 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,11 @@
 		4E0ABD4C1E534666007A3F01 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		4E0ABD4F1E534700007A3F01 /* Lingvo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lingvo.swift; sourceTree = "<group>"; };
+		4E0ABD521E545E2A007A3F01 /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		4E0ABD541E545E56007A3F01 /* NetworkEngineResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngineResponse.swift; sourceTree = "<group>"; };
+		4E0ABD5D1E54604D007A3F01 /* ObjectParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectParsable.swift; sourceTree = "<group>"; };
+		4E41A2231E54686C00C84771 /* Dictionary+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Parser.swift"; sourceTree = "<group>"; };
+		4E41A2251E54687400C84771 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		659CD6171E507F80004DC219 /* lingvo-swift-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lingvo-swift-client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659CD61A1E507F80004DC219 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +53,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0ABD511E545D25007A3F01 /* ServerIntigration */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABD521E545E2A007A3F01 /* NetworkEngine.swift */,
+				4E0ABD541E545E56007A3F01 /* NetworkEngineResponse.swift */,
+			);
+			name = ServerIntigration;
+			sourceTree = "<group>";
+		};
+		4E0ABD5C1E546039007A3F01 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABD5D1E54604D007A3F01 /* ObjectParsable.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		4E41A2271E54687A00C84771 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E41A2251E54687400C84771 /* String+Localization.swift */,
+				4E41A2231E54686C00C84771 /* Dictionary+Parser.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		659CD60E1E507F80004DC219 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +99,9 @@
 		659CD6191E507F80004DC219 /* lingvo-swift-client */ = {
 			isa = PBXGroup;
 			children = (
+				4E41A2271E54687A00C84771 /* Extensions */,
+				4E0ABD5C1E546039007A3F01 /* Protocol */,
+				4E0ABD511E545D25007A3F01 /* ServerIntigration */,
 				4E0ABD4D1E5346F6007A3F01 /* ConsoleIO.swift */,
 				4E0ABD4F1E534700007A3F01 /* Lingvo.swift */,
 				659CD61A1E507F80004DC219 /* main.swift */,
@@ -128,9 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E41A2241E54686C00C84771 /* Dictionary+Parser.swift in Sources */,
+				4E0ABD5E1E54604D007A3F01 /* ObjectParsable.swift in Sources */,
 				659CD61B1E507F80004DC219 /* main.swift in Sources */,
 				4E0ABD501E534700007A3F01 /* Lingvo.swift in Sources */,
+				4E0ABD551E545E56007A3F01 /* NetworkEngineResponse.swift in Sources */,
+				4E0ABD531E545E2A007A3F01 /* NetworkEngine.swift in Sources */,
 				4E0ABD4E1E5346F6007A3F01 /* ConsoleIO.swift in Sources */,
+				4E41A2261E54687400C84771 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
