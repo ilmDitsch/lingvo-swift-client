@@ -1,6 +1,6 @@
 //
 //  NetworkEngineResponse.swift
-//  HDProduktion
+//  lingvo-swift-client
 //
 //  Created by Daniel on 06.01.16.
 //  Copyright © 2016 MicroMovie Media GmbH. All rights reserved.

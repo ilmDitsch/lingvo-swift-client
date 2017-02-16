@@ -1,6 +1,6 @@
 //
-//  MBObjectParsable.swift
-//  Baberini
+//  ObjectParsable.swift
+//  lingvo-swift-client
 //
 //  Created by Torsten Büchner on 16.09.16.
 //  Copyright © 2016 Museum Barberini. All rights reserved.

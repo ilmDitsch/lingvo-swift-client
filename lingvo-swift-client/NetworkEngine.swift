@@ -1,6 +1,6 @@
 //
 //  NetworkEngine.swift
-//  HDProduktion
+//  lingvo-swift-client
 //
 //  Created by Daniel on 06.01.16.
 //  Copyright © 2016 MicroMovie Media GmbH. All rights reserved.
@@ -15,11 +15,7 @@ enum NetworkEngineRequestMethod : String {
 
 
 class NetworkEngine {
-
-//	static let baseURL = URL(string: "http://192.168.10.120:8100/filmtech/api/")
-    static let baseURL = URL(string: "http://lvps92-51-162-50.dedicated.hosteurope.de/api/")
-//	static let imageBaseURL = URL(string: "http://192.168.10.120:8100/filmtech/img/article_images/")
-    static let imageBaseURL = URL(string: "http://lvps92-51-162-50.dedicated.hosteurope.de/img/article_images/")
+    static let baseURL = URL(string: "http://")
 	
 	func jsonRequest(_ endpoint: String, method: NetworkEngineRequestMethod, bodyParams: AnyObject?, baseURL : URL) -> URLRequest {
 		
