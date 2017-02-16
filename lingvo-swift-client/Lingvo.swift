@@ -33,6 +33,7 @@ class Lingvo {
         case .initialize, .push, .pull:
             //todo: spezify the functions
             print(self.optionType.value)
+            LingvoMethods.getTranslation()
         case .help:
             ConsoleIO.printUsage()
         default:
